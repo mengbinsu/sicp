@@ -1,0 +1,5 @@
+(define (sum n)
+  (cond ((or (< n 3) (= n 3)) n)
+        ((> n 3) (+ (sum(- n 1))
+                    (* 2 (sum(- n 2)))
+                    (* 3 (sum(- n 3)))))))
